@@ -12,6 +12,7 @@ $color_gallery_approx: #eee;
 $web_orange: orange;
 $color_chicago_approx: #585858;
 $color_pink_swan_approx: #bbb;
+$color_wireit_bg: rgba(255,255,255,0.95);
 
 //urls
 $url_0: url(background_pixel.png);
@@ -84,28 +85,36 @@ $url_0: url(background_pixel.png);
 	}
 }
 
+// this "div" is actually not necessary
 div {
 	&.WireIt-Container {
 		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-		box-shadow: 6px 6px 10px $color_silver_chalice_approx;
-		filter: alpha(opacity=80);
+		box-shadow: 3px 5px 4px $color_silver_chalice_approx;
 		font-size: 8pt;
 		opacity: 0.8;
 		position: absolute;
 		width: 220px;
 		z-index: 5;
+        background-color: $color_wireit_bg;
+        border: 1px solid $color_celeste_approx;
+        border-radius: 5px;
 		div.body {
-			border: 1px solid $color_celeste_approx;
+			border: 0 none;
 			padding: 10px 3px;
 			position: relative;
 		}
 	}
 	&.WireIt-Container-focused {
 		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-		box-shadow: 10px 10px 10px $color_silver_chalice_approx !important;
-		filter: alpha(opacity=100);
+		box-shadow: 4px 6px 6px $color_silver_chalice_approx !important;
 		opacity: 1;
 		z-index: 6;
+        background-color: $color_wireit_bg;
+        border: 1px solid $color_celeste_approx;
+        border-radius: 5px;
+        div.body {
+            border: 0 none;
+        }
 	}
 	&.WireIt-Layer {
 		background-image: $url_0;

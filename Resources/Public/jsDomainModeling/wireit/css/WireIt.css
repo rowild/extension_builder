@@ -48,17 +48,16 @@ div.WireIt-Terminal-dropinvite {
  * Containers
  */
 div.WireIt-Container {
-   position: absolute;
+    position: absolute;
  	z-index: 5;
- 	opacity: 0.8;
- 	filter: alpha(opacity = 80);
-   border: 0; /* Changing this value causes positioning issues */
-   font-size: 8pt;
+    opacity: 0.8;
+    border: 0; /* Changing this value causes positioning issues */
+    font-size: 8pt;
 }
 
 div.WireIt-Container div.body {
-   padding: 5px;
-   /*overflow:auto;*/
+    padding: 5px;
+    /*overflow:auto;*/
  	border: 2px solid #3366CC;
  	background-color: #FFFFFF;
 }
@@ -85,38 +84,38 @@ div.WireIt-Container-ddhandle span {
 }
 
 img.WireIt-Container-icon {
-   background: white;
-   position: absolute;
-   top: 4px;
-   left: 4px;
-   padding: 1px;
-   border: 1px solid #ccc;
+    background: white;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    padding: 1px;
+    border: 1px solid #ccc;
 }
 
 div.WireIt-Container-resizehandle {
-   position: absolute;
-   bottom: 0;
-   right: 0;
-   width: 10px;
-   height: 10px;
-   cursor: se-resize;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    cursor: se-resize;
+    background-color: #666;
 }
 
 div.WireIt-Container-closebutton {
-   /*background-image: url(../images/close.png);
-   width: 25px;
-   height: 15px;*/
-   position: absolute;
-   top: 4px;
-   right: 4px;
-   cursor: pointer;
+    /*background-image: url(../images/close.png);
+    width: 25px;
+    height: 15px;*/
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
 }
 
 
 div.WireIt-Container-focused {
-   z-index: 6;
-   opacity: 1;
-   filter: alpha(opacity = 100);
+    z-index: 6;
+    opacity: 1;
 }
 
 /**
